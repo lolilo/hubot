@@ -8,8 +8,7 @@
 //   None
 //
 // Commands:
-//   hubot add   - returns whether is it weekend or not
-//   hubot is it holiday ?  - returns whether is it holiday or not
+//   hubot lilo wants lunch at 11:11  - returns a confirmation message
 
 var timeFormat = /^([0-9]{2})\:([0-9]{2})$/;
 

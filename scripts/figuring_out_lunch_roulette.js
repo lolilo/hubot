@@ -8,8 +8,7 @@
 //   None
 //
 // Commands:
-//   hubot add   - returns whether is it weekend or not
-//   hubot is it holiday ?  - returns whether is it holiday or not
+//   nothing yet
 
 var timeFormat = /^([0-9]{2})\:([0-9]{2})$/;
 
