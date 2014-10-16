@@ -1,7 +1,7 @@
 var assert = require('assert')
 
-date_list = require('./../../scripts/lunch_roulette').date_list;
-business_logic = require('./../../scripts/lunch_roulette').business_logic;
+date_list = require('./../../scripts/figuring_out_lunch_roulette').date_list;
+business_logic = require('./../../scripts/figuring_out_lunch_roulette').business_logic;
 
 // compare two arrays in JavaScript,
 // http://stackoverflow.com/questions/7837456/comparing-two-arrays-in-javascript
