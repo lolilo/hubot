@@ -11,11 +11,28 @@
 //   hubot add   - returns whether is it weekend or not
 //   hubot is it holiday ?  - returns whether is it holiday or not
 
+var timeFormat = /^([0-9]{2})\:([0-9]{2})$/;
 
 module.exports = function(robot) {
-	robot.respond(/(.*) wants lunch/i, function(msg){
-		msg.reply("Okay! I will sign you up.");
+
+	robot.respond(/(.*) wants lunch at ([0-9]{2})\:([0-9]{2})/i, function(msg){
+		var name = msg.match[1];
+		var time = msg.match[2] + ":" + msg.match[3];
+		msg.reply("Okay, " + name + "! I will sign you up for " + time + ".");
 	});
+
+
+
+// 	robot.respond(/open the (.*) doors/i, function(msg) {
+//   var doorType;
+//   doorType = msg.match[1];
+//   if (doorType === "pod bay") {
+//     return msg.reply("I'm afraid I can't let you do that.");
+//   } else {
+//     return msg.reply("Opening " + doorType + " doors");
+//   }
+// });
+
 }
 
 // global variable in which we can store the subscribed people
