@@ -38,6 +38,7 @@ suite('collect.js', function() {
     // store can only handle unique names -- should provide error if key already exists in hash map /
     // another Gabor has already registered
     // must use "Gabor2" or something as the key
+    // Well, if we're using HipChat IDs that are all unique, I suppose we won't run into this issue. 
 
     // TODO
     // no check to see if employee actually exists. someone could spam random users
