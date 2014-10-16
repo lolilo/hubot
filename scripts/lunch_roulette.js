@@ -1,13 +1,32 @@
-//global variable in which we can store the subscribed people
+// Description:
+//   lunch roulette for grouping employees
+//
+// Dependencies:
+//   None
+//
+// Configuration:
+//   None
+//
+// Commands:
+//   hubot add   - returns whether is it weekend or not
+//   hubot is it holiday ?  - returns whether is it holiday or not
+
+
+module.exports = function(robot) {
+	robot.respond(/(.*) wants lunch/i, function(msg){
+		msg.reply("Okay! I will sign you up.");
+	});
+}
+
+// global variable in which we can store the subscribed people
 var store = {};
 
-
-//function which has to be replaced if we merge it into hubot
+// function which has to be replaced if we merge it into hubot
 function reply(msg) {
 	console.log(msg);
 }
 
-//function which has to be replaced if we merge it into hubot
+// function which has to be replaced if we merge it into hubot
 function throwError(location,msg) {
 	reply('ERROR in {0}, message: {1}'.format(location, msg));
 }
